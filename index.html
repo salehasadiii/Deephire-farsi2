@@ -566,102 +566,7 @@
             </div>
         </div>
     </section>
-    <!-- SECTION 5: The Process -->
-    <section id="process" class="py-24 bg-[#F9FAFB]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Header -->
-            <div class="mb-16 text-center">
-                <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 serif-font">بازتعریف جذب استعداد</h2>
-                <div class="mt-6 max-w-3xl mx-auto">
-                    <p class="text-gray-600 text-lg leading-relaxed">
-                      
-                        <span class="block mt-2 font-medium text-cyan-700 bg-cyan-100 inline-block px-3 py-1 rounded-md border border-cyan-300">
-                            در این مدل، ما به جای انتظار برای ارسال رزومه، ما متخصص مناسب را پیدا می‌کنیم و به او پیام اختصاصی ارسال می‌کنیم.
-                        </span>
-                    </p>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-                
-                <!-- Navigation (Vertical Connected Timeline) -->
-                <div class="lg:col-span-5 relative">
-                    <!-- Vertical Line -->
-                    <div class="absolute right-8 top-8 bottom-8 w-0.5 bg-gray-200 hidden lg:block"></div>
-
-                    <div class="space-y-6">
-                        <!-- Step 1 Button (Active state managed by JS) -->
-                        <button onclick="setStep(1)" id="btn-step-1" class="w-full relative group flex items-center text-right p-5 rounded-xl transition-all duration-300 bg-white border border-violet-500 shadow-xl ring-2 ring-violet-500/30 step-active">
-                            <div class="flex-shrink-0 ml-4 relative z-10">
-                                <div id="icon-step-1" class="w-14 h-14 rounded-full bg-violet-600 text-white flex items-center justify-center font-bold text-2xl shadow-md transition-colors">۱</div>
-                            </div>
-                            <div class="flex-grow">
-                                <h4 id="title-step-1" class="font-extrabold text-gray-900 text-xl transition-colors">تحلیل نیاز سازمان</h4>
-                                <p class="text-sm text-gray-600 mt-1"></p>
-                            </div>
-                        </button>
-
-                        <!-- Step 2 Button -->
-                        <button onclick="setStep(2)" id="btn-step-2" class="w-full relative group flex items-center text-right p-5 rounded-xl transition-all duration-300 bg-gray-50 border border-transparent hover:bg-white hover:shadow-lg">
-                            <div class="flex-shrink-0 ml-4 relative z-10">
-                                <div id="icon-step-2" class="w-14 h-14 rounded-full bg-gray-200 text-gray-500 flex items-center justify-center font-bold text-2xl transition-colors group-hover:bg-cyan-100 group-hover:text-cyan-700">۲</div>
-                            </div>
-                            <div class="flex-grow">
-                                <h4 id="title-step-2" class="font-extrabold text-gray-500 text-xl group-hover:text-gray-800 transition-colors"> شناسایی هوشمند پروفایل ها با AI</h4>
-                                <p class="text-sm text-gray-400 mt-1"></p>
-                            </div>
-                        </button>
-
-                        <!-- Step 3 Button -->
-                        <button onclick="setStep(3)" id="btn-step-3" class="w-full relative group flex items-center text-right p-5 rounded-xl transition-all duration-300 bg-gray-50 border border-transparent hover:bg-white hover:shadow-lg">
-                            <div class="flex-shrink-0 ml-4 relative z-10">
-                                <div id="icon-step-3" class="w-14 h-14 rounded-full bg-gray-200 text-gray-500 flex items-center justify-center font-bold text-2xl transition-colors group-hover:bg-cyan-100 group-hover:text-cyan-700">۳</div>
-                            </div>
-                            <div class="flex-grow">
-                                <h4 id="title-step-3" class="font-extrabold text-gray-500 text-xl group-hover:text-gray-800 transition-colors">استخراج مسیرهای تماس اختصاصی</h4>
-                            <p class="text-sm text-gray-400 mt-1">دسترسی مستقیم (ایمیل، تلفن، کانکشن)</p>
-                            </div>
-                        </button>
-
-                        <!-- Step 4 Button -->
-                        <button onclick="setStep(4)" id="btn-step-4" class="w-full relative group flex items-center text-right p-5 rounded-xl transition-all duration-300 bg-gray-50 border border-transparent hover:bg-white hover:shadow-lg">
-                            <div class="flex-shrink-0 ml-4 relative z-10">
-                                <div id="icon-step-4" class="w-14 h-14 rounded-full bg-gray-200 text-gray-500 flex items-center justify-center font-bold text-2xl transition-colors group-hover:bg-cyan-100 group-hover:text-cyan-700">۴</div>
-                            </div>
-                            <div class="flex-grow">
-                                <h4 id="title-step-4" class="font-extrabold text-gray-500 text-xl group-hover:text-gray-800 transition-colors"> ارسال کمپین‌های سفارش شده</h4>
-                                <p class="text-sm text-gray-400 mt-1">پیام‌رسانی کاملاً شخصی‌سازی شده</p>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Content Panel (Dynamic) -->
-                <div class="lg:col-span-7">
-                    <div class="bg-white/90 backdrop-blur-md rounded-3xl border border-gray-200 shadow-3xl overflow-hidden h-full min-h-[480px] flex flex-col relative group transition-all duration-500 hover:shadow-4xl">
-                        <!-- Dynamic Image - Changed to abstract/creative visual placeholders -->
-                        <div class="relative h-64 w-full overflow-hidden">
-                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent z-10"></div>
-                            <img id="step-image" src="" alt="Process Step" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                            <div class="absolute bottom-4 right-4 z-20">
-                                <span id="step-badge" class="bg-violet-600 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wide shadow-lg">مرحله اول</span>
-                            </div>
-                        </div>
-                        
-                        <!-- Content -->
-                        <div class="p-10 relative flex-grow">
-                            <div id="step-display" class="relative z-10 transition-opacity duration-300">
-                                <!-- Content populated by JS -->
-                            </div>
-                            <!-- Background Number (Stylized) -->
-                            <div class="absolute left-6 bottom-4 opacity-10 text-[10rem] font-black text-gray-900 select-none font-serif leading-none" id="step-number-bg">۰۱</div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
+   
 
     <!-- SECTION 6: Personalized Outreach Example (MAILBOX VIEW) -->
     <section id="contact_example" class="py-24 bg-gray-50 border-t border-b border-gray-200">
@@ -1040,6 +945,7 @@
 </body>
 
 </html>
+
 
 
 
